@@ -1,20 +1,20 @@
-# Data Pipeline with Python and Object-Oriented Programming
+# Pipeline de Dados com Python e Programação Orientada a Objetos
 
-A small data-engineering project that combines data from heterogeneous sources and organizes the workflow into raw, processing, and refined layers.
+Projeto de Engenharia de Dados que combina informações de fontes heterogêneas e organiza o fluxo em camadas de dados brutos, processamento e dados refinados.
 
-## Goal
+## Objetivo
 
-The project demonstrates how a Python pipeline can ingest datasets from different formats, transform them, and produce a consolidated analytical dataset.
+O projeto demonstra como um pipeline em Python pode ingerir dados em diferentes formatos, realizar transformações e produzir um conjunto consolidado pronto para análise.
 
-## Architecture
+## Arquitetura
 
 ```text
-JSON source --------\
-                     > Raw data -> Python processing -> Refined dataset
-CSV source ---------/
+Fonte JSON ---------\
+                     > Dados brutos -> Processamento em Python -> Dados refinados
+Fonte CSV ----------/
 ```
 
-## Repository structure
+## Estrutura do repositório
 
 ```text
 pipeline_dados/
@@ -30,17 +30,17 @@ pipeline_dados/
     └── fusao_mercado_fv.py
 ```
 
-## What this project demonstrates
+## Competências demonstradas
 
-- ingestion of CSV and JSON data;
-- separation between raw and refined datasets;
-- data transformation with Python;
-- dataset consolidation;
-- exploratory analysis with Jupyter;
-- organization of pipeline code outside the notebook;
-- application of object-oriented programming concepts to data workflows.
+- ingestão de dados em CSV e JSON;
+- separação entre dados brutos e refinados;
+- transformação de dados com Python;
+- consolidação de datasets;
+- análise exploratória com Jupyter;
+- organização da lógica de processamento fora do notebook;
+- aplicação de conceitos de programação orientada a objetos em fluxos de dados.
 
-## Technologies
+## Tecnologias utilizadas
 
 - Python
 - Pandas
@@ -48,30 +48,30 @@ pipeline_dados/
 - CSV
 - JSON
 
-## Suggested execution flow
+## Fluxo sugerido de execução
 
-1. inspect the source files in `pipeline_dados/raw`;
-2. run the processing scripts in `pipeline_dados/scripts`;
-3. inspect the consolidated output in `pipeline_dados/refined`;
-4. use `pipeline_dados/notebooks/exploracao.ipynb` for exploratory analysis.
+1. inspecionar os arquivos de origem em `pipeline_dados/raw`;
+2. executar os scripts em `pipeline_dados/scripts`;
+3. analisar o resultado consolidado em `pipeline_dados/refined`;
+4. utilizar `pipeline_dados/notebooks/exploracao.ipynb` para análise exploratória.
 
-## Data-engineering concepts
+## Conceitos de Engenharia de Dados
 
-The repository follows a simple layered pattern:
+O repositório segue um padrão simples de camadas:
 
-- **Raw** — source data as received;
-- **Processing** — Python transformations and consolidation rules;
-- **Refined** — cleaned dataset ready for analysis.
+- **Raw** — dados de origem como foram recebidos;
+- **Processing** — transformações e regras de consolidação em Python;
+- **Refined** — dados tratados e prontos para análise.
 
-This separation makes the workflow easier to understand, debug, and extend.
+Essa separação facilita a compreensão do fluxo, depuração e evolução do pipeline.
 
-## Next improvements
+## Próximas melhorias
 
-- dependency file and reproducible environment;
-- command-line entry point;
-- automated tests;
-- schema validation;
-- logging;
-- orchestration;
-- cloud storage integration;
-- CI pipeline.
+- adicionar arquivo de dependências e ambiente reproduzível;
+- criar ponto de entrada por linha de comando;
+- adicionar testes automatizados;
+- validação de esquema;
+- logging estruturado;
+- orquestração;
+- integração com armazenamento em nuvem;
+- pipeline de CI.
